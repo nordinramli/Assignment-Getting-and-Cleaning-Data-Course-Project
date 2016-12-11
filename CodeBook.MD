@@ -1,5 +1,4 @@
-#Getting and Cleaning Data Project
-ALT-H1
+# Getting and Cleaning Data Project
 
 by NORDIN RAMLI
 
@@ -32,14 +31,15 @@ Section 1. Merge the training and the test sets to create one data set.
 
 After setting the source directory for the files, read into tables the data located in
 
--features.txt
--activity_labels.txt
--subject_train.txt
--x_train.txt
--y_train.txt
-subject_test.txt
-x_test.txt
-y_test.txt
+- features.txt
+- activity_labels.txt
+- subject_train.txt
+- x_train.txt
+- y_train.txt
+- subject_test.txt
+- x_test.txt
+- y_test.txt
+
 Assign column names and merge to create one data set.
 
 Section 2. Extract only the measurements on the mean and standard deviation for each measurement.
