@@ -1,4 +1,4 @@
-# Codebook for the _Getting and Cleaning Data Project
+# Codebook for the Getting and Cleaning Data Project
 
 by NORDIN RAMLI
 
@@ -38,18 +38,16 @@ After setting the source directory for the files, read the data and loads into t
 - subject_test.txt
 - X_test.txt
 - Y_test.txt
-
 Assign column names and merge both TRAIN and TEST dataset into a single dataset.
 
 ### Section 2. Extract only the measurements on the mean and standard deviation for each measurement.
-
 Create a vector that contains TRUE values for the ID, mean and std columns and FALSE values for the others. Subset this data to keep only the necessary columns.
 
 ### Section 3. Use descriptive activity names to name the activities in the data set
-Merge the data subsets with the activitynames table to include the descriptive activity names
+Merge the data subsets with the activitynames table to include the descriptive activity names.
 
 ### Section 4. Appropriately label the data set with descriptive activity names.
 Use gsub function for pattern replacement to clean up the data labels.
 
 ### Section 5. Create a new file for tidy data set with the average of each variable for each activity and each subject.
-Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
+Produce only a data set with the average of each veriable for each activity and subject.
