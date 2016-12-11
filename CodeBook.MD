@@ -8,9 +8,9 @@ Additional information about the variables, data and transformations used in the
 
 ##Source Data
 
-A full description of the data used in this project can be found at The UCI Machine Learning Repository
+A full description of the data used in this project can be found at [The UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-The source data for this project can be found here.
+The source data for this project can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
 ##Data Set Information
 
