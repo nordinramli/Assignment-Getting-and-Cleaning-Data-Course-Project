@@ -1,4 +1,4 @@
-# Getting and Cleaning Data Project
+# Codebook for the _Getting and Cleaning Data Project
 
 by NORDIN RAMLI
 
@@ -18,9 +18,9 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-##Attribute Information
+##Variables Information
 
-For each record in the dataset it is provided:
+For each record in the dataset, it is provided:
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope.
@@ -28,33 +28,28 @@ For each record in the dataset it is provided:
 - Its activity label.
 - An identifier of the subject who carried out the experiment.
 
-### Section 1. Merge the training and the test sets to create one data set.
-
-After setting the source directory for the files, read into tables the data located in
-
+### Section 1. Download the datasets and load it. Merge the training and the test sets to create one data set.
+After setting the source directory for the files, read the data and loads into tables from the data located in
 - features.txt
 - activity_labels.txt
 - subject_train.txt
-- x_train.txt
-- y_train.txt
+- X_train.txt
+- Y_train.txt
 - subject_test.txt
-- x_test.txt
-- y_test.txt
+- X_test.txt
+- Y_test.txt
 
-Assign column names and merge to create one data set.
+Assign column names and merge both TRAIN and TEST dataset into a single dataset.
 
 ### Section 2. Extract only the measurements on the mean and standard deviation for each measurement.
 
-Create a logcal vector that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others. Subset this data to keep only the necessary columns.
+Create a vector that contains TRUE values for the ID, mean and std columns and FALSE values for the others. Subset this data to keep only the necessary columns.
 
 ### Section 3. Use descriptive activity names to name the activities in the data set
-
-Merge data subset with the activityType table to cinlude the descriptive activity names
+Merge the data subsets with the activitynames table to include the descriptive activity names
 
 ### Section 4. Appropriately label the data set with descriptive activity names.
-
 Use gsub function for pattern replacement to clean up the data labels.
 
-### Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+### Section 5. Create a new file for tidy data set with the average of each variable for each activity and each subject.
 Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
