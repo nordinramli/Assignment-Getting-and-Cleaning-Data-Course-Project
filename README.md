@@ -1,4 +1,4 @@
-# Assignment-Getting-and-Cleaning-Data-Course-Project
+# Getting and Cleaning Data Course Project
 by NORDIN RAMLI
 
 This README file explains about the submission of the course project on Getting and Cleaning Data, by John Hopkins University (via Coursera)
